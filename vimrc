@@ -9,11 +9,7 @@ augroup END
 "==============================================================================
 " Encoding
 "==============================================================================
-if has('win32') || has('win64')
-    set encoding=cp932
-else
-    set encoding=utf-8
-endif
+set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp,default,latin
 
@@ -116,12 +112,6 @@ highlight CursorColumn ctermbg=8
 set showmatch
 set matchpairs& matchpairs+=<:>
 
-" 80桁目をハイライト
-if v:version >= 703
-    set colorcolumn=80
-    autocmd MyAutoCmd ColorScheme * hi ColorColumn guibg=Red ctermbg=1
-endif
-
 " 行末のスペースと全角スペースをハイライト
 function! HiSpace()
     hi EndSpace cterm=underline ctermfg=Red gui=underline guifg=Red
@@ -148,16 +138,6 @@ call HiSpace()
 set nowritebackup
 set nobackup
 set noswapfile
-
-"===================
-" Printer
-"===================
-if has('printer')
-  if has('win32')
-    set printfont=MS_Mincho:h12:cSHIFTJIS
-    "set printfont=MS_Gothic:h12:cSHIFTJIS
-  endif
-endif
 
 "===================
 " Tag jump settigns
