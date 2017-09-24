@@ -167,3 +167,7 @@ if filereadable($VIM . '/vimrc') && filereadable($VIM . '/ViMrC')
   set tags=./tags,tags
 endif
 
+
+"===================
+" dein
+"===================
