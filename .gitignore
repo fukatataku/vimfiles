@@ -1,2 +1,4 @@
 .netrwhist
 repos
+.cache
+dein
