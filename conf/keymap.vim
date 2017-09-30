@@ -47,3 +47,6 @@ nnoremap <S-Right> :cprevious<CR>
 nnoremap <S-Left> :cnext<CR>
 "nnoremap :<C-u>cfirst<CR>
 "nnoremap :<C-u>clast<CR>
+
+" タグジャンプ
+nnoremap <C-]> g<C-]>
