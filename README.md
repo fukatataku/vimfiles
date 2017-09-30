@@ -12,12 +12,6 @@ sudo apt remove --purge vim vim-runtime vim-common
 $ sudo apt install -y build-essential ncurses-dev lua5.2 lua5.2-dev luajit python-dev python3-dev ruby-dev
 ```
 
-luaコマンドがなければ作成する。
-```
-$ cd /usr/bin/
-$ ln -s lua5.3 lua
-```
-
 vimをビルド
 ```
 $ mkdir ~/tmp
