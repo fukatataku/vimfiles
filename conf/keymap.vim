@@ -12,17 +12,19 @@ nnoremap k gk
 nnoremap <S-h> ^
 vnoremap <S-h> ^
 
-" <Shift-h>で行末へ
+" <Shift-l>で行末へ
 nnoremap <S-l> $
 vnoremap <S-l> $
 
 " 検索結果を画面中央へ
 nnoremap n nzz
 nnoremap N Nzz
-nnoremap * *zz
-nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
+
+" 検索時に移動しない
+nnoremap * *N
+nnoremap # #N
 
 nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
