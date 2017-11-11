@@ -22,10 +22,18 @@ if dein#load_state(expand('~/.vim/dein'))
   call dein#add('Shougo/unite.vim', {
         \ 'depends': ['vimproc.vim'],
         \ })
+  "call dein#add('Shougo/vimshell.vim')
   call dein#add('Shougo/neocomplete.vim')
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/vimfiler')
+
+  "call dein#add('tpope/vim-surround')
+  "call dein#add('vim-scripts/Align')
+  "call dein#add('vim-scripts/YankRing.vim')
+  "call dein#add('lambdalisue/vim-django-support')
+  "call dein#add('jmcantrell/vim-virtualenv')
+  "call dein#add('davidhalter/jedi-vim')
 
   call dein#end()
   call dein#save_state()
