@@ -43,4 +43,4 @@ filetype plugin indent on
 syntax enable
 
 " Load external config (plugin)
-runtime! conf/dein/*.vim
+runtime! conf/deinconf/*.vim
