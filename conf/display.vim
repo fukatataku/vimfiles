@@ -7,4 +7,6 @@ set list                        " Tab文字と行末文字表示
 set listchars=tab:>>            " Tab,行末に表示する文字
 highlight SpecialKey ctermfg=4  " タブ文字を色を設定
 set visualbell t_vb=            " ビープ音を視覚表示に置き換えつつ、何も表示しない
-set laststatus=2
+
+set statusline=%f%m%r%h%=[%l,%c]%y[%{&fileencoding}/%{&fileformat}]
+set laststatus=2                " ステータスラインを常に表示
