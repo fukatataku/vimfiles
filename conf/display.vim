@@ -13,8 +13,8 @@ set statusline+=%m
 set statusline+=%r
 set statusline+=%h
 set statusline+=%=
-set statusline+=[%l,%c]
-set statusline+=%y
-set statusline+=[%{&fileencoding}/%{&fileformat}]
+set statusline+=[%l,%c]\ 
+" set statusline+=%y\ 
+set statusline+=[%{&fileencoding}/%{&fileformat}]\ 
 set statusline+=%{fugitive#statusline()}
 set laststatus=2                " ステータスラインを常に表示
