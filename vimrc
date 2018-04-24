@@ -28,6 +28,9 @@ if dein#load_state(expand('~/.vim/dein'))
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/vimfiler')
 
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('thinca/vim-quickrun')
+
   "call dein#add('tpope/vim-surround')
   "call dein#add('vim-scripts/Align')
   "call dein#add('vim-scripts/YankRing.vim')

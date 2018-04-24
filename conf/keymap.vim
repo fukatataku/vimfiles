@@ -1,4 +1,5 @@
 " Key Mapping
+let mapleader = "\<Space>"
 
 " <Ctrl-j>でNormalモード
 inoremap <C-j> <Esc>
