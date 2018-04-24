@@ -2,12 +2,12 @@
 
 syntax on
 set background=dark
-set cursorline
-set cursorcolumn
-hi clear CursorLine
-hi clear CursorColumn
-highlight CursorLine ctermbg=8
-highlight CursorColumn ctermbg=8
+" set cursorline
+" set cursorcolumn
+" hi clear CursorLine
+" hi clear CursorColumn
+" highlight CursorLine ctermbg=8
+" highlight CursorColumn ctermbg=8
 
 set showmatch
 set matchpairs& matchpairs+=<:>
