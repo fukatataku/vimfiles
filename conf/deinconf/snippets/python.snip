@@ -1,0 +1,31 @@
+snippet     shebang
+abbr        #!/usr/bin/env python
+options     head
+	#!/usr/bin/env python
+	${0}
+
+snippet     shebang3
+abbr        #!/usr/bin/env python3
+options     head
+	#!/usr/bin/env python3
+	${0}
+
+snippet     argparse
+abbr        def get_args()...
+options     head
+	import sys
+	import argparse
+	
+	
+	def get_args():
+	    parser = argparse.ArgumentParser(description="Sample programs")
+	
+	    # Positional Arguments
+	    parser.add_argument("n", type=int, help="Number argument", metavar="NUM1")
+	    parser.add_argument("slist", nargs="*", help="String arguments", metavar="STR")
+	
+	    # Optional Arguments
+	    parser.add_argument("-i", dest="infile", type=argparse.FileType("r"), required=True, help="input filepath", metavar="FILEPATH")
+	    parser.add_argument("-o", dest="outfile", type=argparse.FileType("w"), default=sys.stdout, help="output filepath", metavar="FILEPATH")
+	
+	    return parser.parse_args()
