@@ -43,3 +43,23 @@ $ sh ./installer.sh ~/.vim/dein
 $ vi
 :call dein#install()
 ```
+
+## CentOS7の場合
+vimをアンインストール
+※ 後で見たら古いvimが残っていた。以下の手順だけでは不足しているかも。
+※ 以下の手順でvimをアンインストールするとsudoもアンインストールされる。もっと別の方法があるはず。
+```
+$ sudo yum remove "vim*"
+$ su -
+# yum -y install sudo
+# visudo
+# exit
+```
+
+python3をインストール
+```
+$ sudo yum -y install python36 python36-devel perl-ExtUtils-Embed python-devel ruby-devel lua-devel ncurses-devel
+$ sudo ln -s /usr/bin/python3.6 /usr/bin/python3
+```
+
+以降はUbuntuの場合と同じ。
