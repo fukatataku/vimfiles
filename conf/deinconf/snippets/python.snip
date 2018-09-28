@@ -27,20 +27,20 @@ options     head
 snippet     argparse
 abbr        def get_args()...
 options     head
-	import sys
 	import argparse
 	
 	
 	def get_args():
-	    parser = argparse.ArgumentParser(description="Sample programs")
+	    """ コマンドライン引数処理 """
+	    parser = argparse.ArgumentParser(description=__doc__)
 	
 	    # Positional Arguments
 	    parser.add_argument("n", type=int, help="Number argument", metavar="NUM1")
 	    parser.add_argument("slist", nargs="*", help="String arguments", metavar="STR")
 	
 	    # Optional Arguments
-	    parser.add_argument("-i", dest="infile", type=argparse.FileType("r"), required=True, help="input filepath", metavar="FILEPATH")
-	    parser.add_argument("-o", dest="outfile", type=argparse.FileType("w"), default=sys.stdout, help="output filepath", metavar="FILEPATH")
+	    parser.add_argument("-i", dest="input_filepath", type=str, required=True, help="input filepath", metavar="FILEPATH")
+	    parser.add_argument("-o", dest="output_filepath", type=str, default=sys.stdout, help="output filepath", metavar="FILEPATH")
 	
 	    return parser.parse_args()
 
