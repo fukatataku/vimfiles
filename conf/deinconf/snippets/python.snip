@@ -65,3 +65,8 @@ options     head
 			ret = func(*args, **kwargs)
 			return ret
 		return wrapper
+
+snippet     here
+abbr        HERE = os.path.dirname(...
+options     head
+	HERE = os.path.dirname(os.path.abspath(__file__))
