@@ -30,6 +30,7 @@ if dein#load_state(expand('~/.vim/dein'))
 
   call dein#add('tpope/vim-fugitive')
   call dein#add('thinca/vim-quickrun')
+  call dein#add('easymotion/vim-easymotion')
 
   "call dein#add('tpope/vim-surround')
   "call dein#add('vim-scripts/Align')
