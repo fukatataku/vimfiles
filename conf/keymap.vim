@@ -53,3 +53,6 @@ nnoremap <S-Left> :cnext<CR>
 
 " タグジャンプ
 nnoremap <C-]> g<C-]>
+
+" jq
+nnoremap <Leader>q :%!jq '.'<CR>
