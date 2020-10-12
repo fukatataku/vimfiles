@@ -84,3 +84,45 @@ abbr        import traceback...
 options     head
 	import traceback
 	traceback.print_exc()
+
+snippet     docstring_numpy
+abbr        Parameters ...
+options     head
+	""" DESCRIPTION
+
+	Parameters
+	----------
+	arg1: str
+	    First Argument
+	arg2: list[int]
+	    Second Argument
+	arg3: dict[str, int]
+	    Third Argument
+
+	Returns
+	-------
+	str or None
+	    Return Value
+
+	Raises
+	------
+	ValueError
+	    if arg1 is empty string.
+	"""
+
+snippet     docstring_google
+abbr        Args: ...
+options     head
+	""" DESCRIPTION
+
+	Args:
+	    arg1 (str): First Argument
+	    arg2 (list[int]): Second Argument
+	    arg3 (dict[str, int]): Third Argument
+
+	Returns:
+	    str or None: Return Value
+
+	Raises:
+	    ValueError: if arg1 is empty string.
+	"""
